@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MSB Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="content/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="themes/msb_mobile.css" />
+        <link rel="stylesheet" href="content/msb_mobile_overrides.css" />
+        <script type="text/javascript" charset="utf-8" src="scripts/cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile.config.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="scripts/msb_mobile.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="quick_deposit_confirm" data-url="quick_deposit_confirm.html" data-theme="b">
+            <div data-role="header" data-position="fixed">
+                <h2>Confirmation</h2>
+            </div>
+            <div data-role="content">
+                <h2>Deposit Confirmation</h2>
+                <p>
+                Confirm Deposit of <strong>$20</strong> to the specified account.
+                </p>
+                <p>
+                Deposit funds from: <strong>Visa: 1111</strong>
+                </p>
+                <p>
+                Convenience Fee: <strong>$2</strong>
+                </p>
+                <p>
+                Total: <strong>$22.00</strong>
+                </p>
+                <a data-role="button" data-rel="dialog" href="quick_deposit_receipt.html" data-theme="a" data-icon="check" data-iconpos="right">Deposit</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="delete" data-iconpos="right">Cancel</a>
+            </div>
+        </div>
+    </body>
+</html>

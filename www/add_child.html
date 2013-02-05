@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MSB Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="content/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="themes/msb_mobile.css" />
+        <link rel="stylesheet" href="content/msb_mobile_overrides.css" />
+        <script type="text/javascript" charset="utf-8" src="scripts/cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile.config.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="scripts/msb_mobile.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="add_child" data-theme="b">
+            <div data-role="header" data-position="fixed">
+                <a href="#" data-role="button" data-icon="back" data-rel="back" class="ui-btn-left" data-iconpos="left">Back</a>
+                <h1>Add child</h1>
+            </div>
+            <div data-role="content">
+                <form action="" method="POST" data-ajax="false">
+                    <div data-role="fieldcontain">
+                        <label for="add_child_state"> State </label>
+                        <select id="add_child_state">
+                            <option selected="selected">Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                        </select>
+                        <label for="add_child_school"> School </label>
+                        <input id="add_child_school" type="text" placeholder="" value="" />
+                        <label for="add_child_lastname"> Last Name </label>
+                        <input id="add_child_lastname" type="text" placeholder="" value="" />
+                        <label for="add_child_sid">Id #</label>
+                        <input id="add_child_sid" type="text" placeholder="" value="" />
+                        <label for="add_child_birthday">Birthday</label>
+                        <input id="add_child_birthday" name="add_child_birthday" type="datetime" data-role=""
+                        data-options='{"mode":"flipbox", "beforeToday": true, "useFocus": true, "transition": "none", "useAnimation": false}' />
+                    </div>
+                    <a data-role="button" data-icon="search" data-iconpos="right" data-rel="dialog" href="child_not_found.html">Search</a>
+                </form>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="settings.html" data-icon="gear">Settings</a>
+                        </li>
+                        <li>
+                            <a href="login.html" data-icon="back">Log Out</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html" data-rel="dialog" data-icon="star">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

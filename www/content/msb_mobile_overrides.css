@@ -1,0 +1,49 @@
+/*[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}*/
+.ui-header .ui-title,.ui-footer .ui-title {
+	text-overflow: clip;
+	white-space: nowrap;
+	margin: 0.6em 20% 0.8em;
+}
+
+.center {
+	text-align: center;
+}
+
+.center * {
+	margin: 8px 5px 5px 8px auto;
+}
+
+.critical {
+	color: red;
+	font-weight: bold;
+}
+
+label.deposit_funds_account {
+	display: inline-block;
+}
+
+div.deposit_funds_account {
+	display: inline-block;
+	margin-top: -10px;
+	float: right;
+}
+
+.ui-grid-c {
+	border: 1px solid #7BA0CD;
+}
+
+.row {
+	padding: .2em;
+	border-top: 1px solid #7BA0CD;
+	border-bottom: 1px solid #7BA0CD;
+}
+
+.alt_row {
+	background-color: #D3DFEE;
+	padding: .2em;
+}
+
+.right {
+	text-align: right;
+}

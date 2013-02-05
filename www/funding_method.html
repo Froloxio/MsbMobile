@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MSB Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="content/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="themes/msb_mobile.css" />
+        <link rel="stylesheet" href="content/msb_mobile_overrides.css" />
+        <script type="text/javascript" charset="utf-8" src="scripts/cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile.config.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="scripts/msb_mobile.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="funding_method" data-theme="b">
+            <div data-role="header" data-positon="fixed">
+                <a href="#" data-role="button" data-icon="back" data-rel="back" class="ui-btn-left" data-iconpos="left">Back</a>
+                <h2>Funding Methods</h2>
+            </div>
+            <div data-role="content">
+                <h3>Select or add a new funding method</h3>
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#" data-rel="back">
+                            <h3>Visa: ...1111</h3>
+                            <p>
+                            <strong>Expiration: 01/13</strong>
+                            </p>
+                            <p>Jane Walker</p>
+                            <p class="ui-li-aside">
+                            <strong>Default</strong>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-rel="back">
+                            <h3>Checking: ...2222</h3>
+                            <p>Jane Walker</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="funding_method_add_card.html" data-rel="dialog" data-icon="plus">Add new credit/debit card</a>
+                    </li>
+                    <li>
+                        <a href="funding_method_add_ach.html" data-rel="dialog" data-icon="plus"> Add new bank account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

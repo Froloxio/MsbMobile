@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MSB Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="content/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="themes/msb_mobile.css" />
+        <link rel="stylesheet" href="content/msb_mobile_overrides.css" />
+        <script type="text/javascript" charset="utf-8" src="scripts/cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile.config.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="scripts/msb_mobile.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="home" data-theme="b">
+            <div data-role="header" data-position="fixed">
+                <a data-role="button" href="faq.html" data-icon="info" data-iconpos="left" class="ui-btn-left">FAQ</a>
+                <h1>Home</h1>
+                <a data-role="button" data-icon="refresh" data-iconpos="notext" data-rel="refresh" class="ui-btn-right"></a>
+            </div>
+            <div data-role="content">
+                <p>Hi, Jane Walker</p>
+                <div data-role="fieldcontain">
+                    <ul data-role="listview" data-inset="true">
+                        <li data-role="list-divider">Alerts</li>
+                        <li data-icon="alert">
+                            <a href="account_details.html">
+                                <p class="critical">Johnny Walker: Low Account Balance</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="fieldcontain">
+                    <a data-role="button" href="deposit_funds.html" data-icon="arrow-r" data-iconpos="right">Deposit Funds</a>
+                </div>
+                <div data-role="fieldcontain">
+                    <ul data-role="listview" data-inset="true">
+                        <li>
+                            <a href="account_details.html?sid=4">
+                                <p class="ui-li-aside critical">$-3.75</p>
+                                <h3>Johnny Walker</h3>
+                                <p>
+                                <strong>Springdale High School</strong>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account_details.html?sid=2">
+                                <p class="ui-li-aside">
+                                <strong>$15.50</strong>
+                                </p>
+                                <h3>Bonnie Walker</h3>
+                                <p>
+                                <strong>Springdale Junior High</strong>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account_details.html?sid=3">
+                                <p class="ui-li-aside">
+                                <strong>$32.25</strong>
+                                </p>
+                                <h3>Grace Walker</h3>
+                                <p>
+                                <strong>Springdale Elementary</strong>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account_details.html?sid=1">
+                                <p class="ui-li-aside">
+                                <strong>$34.25</strong>
+                                </p>
+                                <h3>Sam Walker</h3>
+                                <p>
+                                <strong>Springdale Elementary</strong>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a data-role="button" data-icon="plus" href="add_child.html" data-iconpos="right">Add Child</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="settings.html" data-icon="gear">Settings</a>
+                        </li>
+                        <li>
+                            <a href="login.html" data-icon="back">Log Out</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html" data-rel="dialog" data-icon="star">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

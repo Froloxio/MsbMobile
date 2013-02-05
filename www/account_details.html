@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MSB Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="content/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="themes/msb_mobile.css" />
+        <link rel="stylesheet" href="content/msb_mobile_overrides.css" />
+        <script type="text/javascript" charset="utf-8" src="scripts/cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile.config.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="scripts/msb_mobile.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="account_details" data-theme="b">
+            <div data-role="header" data-position="fixed">
+                <a href="home.html" data-role="button" data-icon="back" data-rel="back" class="ui-btn-left" data-iconpos="left">Back</a>
+                <h1>Account Details</h1>
+            </div>
+            <div data-role="content">
+                <h3 id="student_name">Johnny Walker</h3>
+                <p>
+                <strong id="student_school">Springdale High School</strong>
+                </p>
+                <p id="student_id">ID# 123456789</p>
+                <div style="text-align: right;">
+                    Balance:
+                    <span class="critical" id="student_balance">$-3.75</span>
+                </div>
+                <div data-role="fieldcontain">
+                    <h4 style="text-align: center;">Quick Deposit</h4>
+                    <div id="quickDepositLinks" class="center">
+                        <a href="#" data-rel="dialog" data-role="button" data-inline="true">$10</a>
+                        <a href="quick_deposit_confirm.html" data-rel="dialog" data-role="button" data-inline="true">$20</a>
+                        <a href="#" data-rel="dialog" data-role="button" data-inline="true">$30</a>
+                    </div>
+                </div>
+                <a href="account_history.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Account History</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="settings.html" data-icon="gear">Settings</a>
+                        </li>
+                        <li>
+                            <a href="login.html" data-icon="back">Log Out</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html" data-rel="dialog" data-icon="star">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

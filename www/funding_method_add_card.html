@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MSB Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="content/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="themes/msb_mobile.css" />
+        <link rel="stylesheet" href="content/msb_mobile_overrides.css" />
+        <script type="text/javascript" charset="utf-8" src="scripts/cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile.config.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="scripts/msb_mobile.js"></script>
+    </head>
+    <body>
+        <div data-role="page" data-url="funding_method_add_card.html" id="funding_method_add_card" data-theme="b">
+            <div data-role="header" data-position="fixed">
+                <h2>Add Card</h2>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <label for="funding_method_add_card_type">Card Type</label>
+                    <select id="funding_method_add_card_type" name="funding_method_add_card_type">
+                        <option value="Discover" selected="selected">Discover</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="AMEX">American Express</option>
+                    </select>
+                    <label for="funding_method_add_card_number">Card Number</label>
+                    <input type="text" id="funding_method_add_card_number" name="funding_method_add_card_number" />
+                    <label for="funding_method_add_card_name_on_card">Name On Card</label>
+                    <input type="text" id="funding_method_add_card_name_on_card" name="funding_method_add_card_name_on_card" />
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <label for="funding_method_add_card_expiration_month">Month</label>
+                        </div>
+                        <div class="ui-block-b">
+                            <label for="funding_method_add_card_expiration_year">Year</label>
+                        </div>
+                        <div class="ui-block-a">
+                            <select id="funding_method_add_card_expiration_month" name="funding_method_add_card_expiration_month">
+                                <option value="1" selected="selected">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="ui-block-b">
+                            <select id="funding_method_add_card_expiration_year" name="funding_method_add_card_expiration_year">
+                                <option value="2012" selected="selected">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" data-role="button" data-rel="back" data-icon="check" data-iconpos="right" data-theme="a">Add</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="delete" data-iconpos="right">Cancel</a>
+            </div>
+        </div>
+    </body>
+</html>
